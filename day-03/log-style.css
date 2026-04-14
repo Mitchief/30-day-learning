@@ -1,0 +1,141 @@
+/* 30-Day Learning Log — layout and theme */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1a1a2e;
+}
+
+body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  line-height: 1.5;
+  color: #e0e0e0;
+  background-color: #1a1a2e;
+}
+
+/* Page header */
+body > header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+body > header p {
+  margin: 0;
+  font-size: 1rem;
+  color: #9aa0b4;
+}
+
+body > header {
+  margin-bottom: 2rem;
+}
+
+/* Progress block */
+section[aria-labelledby="progress-label"] {
+  margin-bottom: 2rem;
+}
+
+section[aria-labelledby="progress-label"] h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9aa0b4;
+}
+
+section[aria-labelledby="progress-label"] > p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+progress {
+  display: block;
+  width: 100%;
+  height: 14px;
+  border: none;
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: #0f3460;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #0f3460;
+  border-radius: 999px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #2ecc71;
+  border-radius: 999px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #2ecc71;
+  border-radius: 999px;
+}
+
+/* Log section heading */
+section[aria-labelledby="log-heading"] > h2 {
+  margin: 0 0 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #c5c9d6;
+}
+
+/* Day cards */
+article {
+  background-color: #16213e;
+  border: 1px solid #0f3460;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+article:last-of-type {
+  margin-bottom: 0;
+}
+
+article header h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00b4d8;
+}
+
+/* Date and topic only (inside article header) */
+article header p {
+  margin: 0.15rem 0;
+  font-size: 0.85rem;
+  color: #8b92a8;
+}
+
+article h4 {
+  margin: 1rem 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #c5c9d6;
+}
+
+article ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  body > header h1 {
+    font-size: 1.75rem;
+  }
+}
