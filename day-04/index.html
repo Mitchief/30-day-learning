@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Day 4 - Layout</title>
+    <style>
+
+        :root {
+        --bg-primary: #1a1a2e;
+        --bg-secondary: #16213e;
+        --bg-dark: #0f0f1a;
+        --text-primary: #e0e0e0;
+        --accent: #00b4d8;
+        --border-color: #0f3460;
+        }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: var(--bg-primary);
+      }
+
+      .nav-logo {
+        color: var(--accent);
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        color: var(--text-primary);
+        text-decoration: none;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        padding: 2rem;
+        background: var(--bg-dark);
+      }
+
+      .card {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5rem;
+        color: var(--text-primary);
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="nav">
+      <div class="nav-logo">Mit</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="cards">
+      <div class="card">Day 1 — Terminal</div>
+      <div class="card">Day 2 — Git</div>
+      <div class="card">Day 3 — Cursor</div>
+      <div class="card">Day 4 — CSS Layout</div>
+      <div class="card">Day 5 — Coming soon</div>
+      <div class="card">Day 6 — Coming soon</div>
+    </section>
+
+  </body>
+</html>
