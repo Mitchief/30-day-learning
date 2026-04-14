@@ -1,0 +1,120 @@
+:root {
+    font-size: clamp(14px, 2.5vw, 18px);
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-primary: #e0e0e0;
+    --text-muted: #a0a0b0;
+    --accent: #00b4d8;
+    --border-color: #0f3460;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: sans-serif;
+  }
+  
+  /* ── HEADER ── mobile first */
+  .header {
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  /* ── HERO ── mobile first */
+  .hero {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .hero p {
+    color: var(--text-muted);
+  }
+  
+  /* ── CARDS ── mobile first */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* ── TABLET: 768px and up ── */
+  @media (min-width: 768px) {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+  
+    .logo {
+      margin-bottom: 0;
+    }
+  
+    .hero {
+      padding: 4rem 2rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 2rem;
+    }
+  }
+  
+  /* ── DESKTOP: 1024px and up ── */
+  @media (min-width: 1024px) {
+    .hero {
+      padding: 6rem 4rem;
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 2rem 4rem;
+    }
+  }
