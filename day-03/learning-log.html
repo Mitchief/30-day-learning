@@ -14,8 +14,8 @@
 
   <section aria-labelledby="progress-label">
     <h2 id="progress-label">Course progress</h2>
-    <p>Day 8 of 30</p>
-    <progress value="8" max="30">Day 8 of 30</progress>
+    <p>Day 9 of 30</p>
+    <progress value="9" max="30">Day 9 of 30</progress>
   </section>
 
   <main>
@@ -141,6 +141,21 @@
           <li>Built a health-check route with <code>GET /</code></li>
           <li>Returned JSON data from <code>GET /api/hello</code></li>
           <li>Handled request validation in <code>POST /api/generate</code> with proper <code>400</code> errors</li>
+        </ul>
+      </article>
+
+      <article>
+        <header>
+          <h3>Day 9</h3>
+          <p>Date: <time datetime="2026-04-15">April 15, 2026</time></p>
+          <p>Topic: Modular Express API (Routes &amp; Controllers)</p>
+        </header>
+        <h4>Key lessons</h4>
+        <ul>
+          <li>Split the API using <code>express.Router()</code> and mounted it at <code>/api</code></li>
+          <li>Moved handlers into a controller module (<code>health</code> and <code>generate</code>)</li>
+          <li>Added CORS headers in middleware so the frontend can call the API</li>
+          <li>Validated JSON bodies with clear <code>400</code> responses and hints</li>
         </ul>
       </article>
 
